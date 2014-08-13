@@ -2,6 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h1><i class="fa fa-sitemap">&nbsp;</i>Site Map</h1>
+    <hr />
     <div>
         <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="BulletedList" ShowExpandCollapse="False" ShowLines="True">
             <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />

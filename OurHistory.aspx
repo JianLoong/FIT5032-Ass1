@@ -2,6 +2,7 @@
 
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent">
     <h1><i class="fa fa-history">&nbsp;</i>Our History</h1>
+    <hr />
     <p></p>
     <div class="row">
         <div class="col-lg-6">

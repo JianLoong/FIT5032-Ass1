@@ -9,13 +9,12 @@ public partial class ass1_Registration : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Gender.SelectedValue = null;
         Country.SelectedValue = "Australia";
     }
 
     protected void RegisterButton_Click(Object sender, EventArgs e)
     {
-        if (!Page.IsValid && Page.IsPostBack)
+        if (Page.IsValid && Page.IsPostBack)
         {
             // Hide Panel
             Registration_Form.Visible = false;
@@ -35,9 +34,9 @@ public partial class ass1_Registration : System.Web.UI.Page
             registrationInfo += "<tr><td>No of times eat out</td><td>" + NoOfEatOut.Text + "</td></tr>";
             registrationInfo += "</table>";
 
-            
 
-            Information.Text = "<div class='alert alert-success' role='alert'><h1><i class='fa fa-check'>&nbsp;</i>Congratulations, you have successfully registered.</h1></div>";
+
+            Information.Text = "<div class='alert alert-success' role='alert'><h1><i class='fa fa-thumbs-o-up'>&nbsp;</i>Congratulations, you have successfully registered.</h1></div>";
             Information.Text += "<div class='alert alert-info'>" + registrationInfo + "</div>";
         }
     }
