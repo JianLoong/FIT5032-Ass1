@@ -1,0 +1,21 @@
+﻿/* http://stackoverflow.com/questions/5740512/stick-footer-to-bottom-not-work-in-chrome-does-in-ie-firefox-safari */
+/* http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #f5f5f5;
+}
