@@ -8,12 +8,12 @@
     <title><%: Page.Title %> - U-Village</title>
 
     <%--<link href="~/Content/Site.css" rel="stylesheet" /> --%>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/sticky-footer.css" rel="stylesheet" />
+    <link href="./Content/bootstrap.css" rel="stylesheet" />
+    <link href="./Content/sticky-footer.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Google cursive font -->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
 </head>
@@ -21,9 +21,9 @@
     <div class="container">
         <form runat="server" role="form" class="form-horizontal">
             <asp:PlaceHolder runat="server">
-                <script src="<%: ResolveUrl("Scripts/modernizr-2.6.2.js") %>"></script>
-                <script src="<%: ResolveUrl("Scripts/jquery-1.9.1.js") %>"></script>
-                <script src="<%: ResolveUrl("Scripts/bootstrap.js") %>"></script>
+                <script src="<%: ResolveUrl("./Scripts/modernizr-2.6.2.js") %>"></script>
+                <script src="<%: ResolveUrl("./Scripts/jquery-1.9.1.js") %>"></script>
+                <script src="<%: ResolveUrl("./Scripts/bootstrap.js") %>"></script>
             </asp:PlaceHolder>
             <asp:ScriptManager runat="server">
                 <Scripts>
@@ -44,7 +44,7 @@
                         <a class="navbar-brand" href="./">U-Village</a>
                     </div>
                     <div class="navbar-collapse collapse">
-                        <asp:SiteMapDataSource ID="Web" runat="server" ShowStartingNode="false" />
+                        <asp:SiteMapDataSource ID="Web" runat="server" ShowStartingNode="false" SiteMapProvider="DefaultProvider"/>
                         <asp:Menu ID="Menu1" runat="server"
                             RenderingMode="List"
                             DataSourceID="Web"
@@ -113,9 +113,7 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="well well-sm">
-
                         <h3><i class="fa fa-calendar"></i>&nbsp;Events</h3>
-
                         <!--Center calendar fix: http://stackoverflow.com/questions/24534428/how-to-align-asp-net-calendar-in-middle-of-the-page -->
                         <div style="width: 80%; margin: 0 auto">
                             <asp:Calendar runat="server" BackColor="White" BorderColor="White" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Width="100%" BorderWidth="1px" Height="190px" NextPrevFormat="FullMonth">
@@ -134,7 +132,7 @@
                     <div class="well well-sm">
                         <h3><i class="fa fa-info-circle"></i>&nbsp;Information</h3>
                         <p>
-                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <i class="fa fa-list">&nbsp;</i>
                             <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm" Text="Monash Disclaimer"></asp:HyperLink>
                         </p>
                         <p>

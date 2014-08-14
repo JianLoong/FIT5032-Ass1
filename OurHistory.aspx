@@ -11,21 +11,15 @@
         </div>
         <div class="col-lg-6">
             <div class="well well-lg">
-
                 <p>U-Village was first established in 2003 in Malaysia.</p>
-
                 <p>We are a unique modern Asian Fusion restaurant situated within the heart of St. Kilda</p>
-
                 <p>Our Communal dining tables, bright modern design and golden textured wooden walls set the scene for a smart relaxed dining experience.</p>
-
                 <p>Our Menu prides itself on freshness presentation and above all the authentic flavours of Asia We invite you to enjoy a meal or casual drinks and tapas in our sake & plum wine bar.</p>
-
                 <p>U-Village is found along Fitzroy Street in St Kilda, near where it bends into the Esplanade. </p>
                 <p>a result, the 16, 96 and 3a trams will get you almost to the door. </p>
                 <p>And that means U-Village is within strolling distance of the beach, and the rest of of St Kilda’s nightlife and tourist attractions.</p>
             </div>
         </div>
-
         <p></p>
     </div>
     <p></p>

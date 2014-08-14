@@ -14,13 +14,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="well well-sm text-center">
-                        <asp:HyperLink runat="server" NavigateUrl="FAQ.aspx" Text="FAQ" CssClass="btn btn-info"></asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="./FAQ.aspx" Text="FAQ" CssClass="btn btn-info"></asp:HyperLink>
                         <p>Do you have a question?</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="well well-sm text-center">
-                        <asp:HyperLink runat="server" NavigateUrl="OurHistory.aspx" Text="Our History" CssClass="btn btn-info"></asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigateUrl="./OurHistory.aspx" Text="Our History" CssClass="btn btn-info"></asp:HyperLink>
                         <p>Interested to know our origins? </p>
 
                     </div>
@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="col-lg-6">
-        <asp:Image CssClass="img-responsive" runat="server" ToolTip="U-Village Restaurant and Bar" ImageUrl="Images/gallery.jpg" />
+        <asp:Image CssClass="img-responsive" runat="server" ToolTip="U-Village Restaurant and Bar" ImageUrl="./Images/gallery.jpg" />
     </div>
     </div>
     <p></p>

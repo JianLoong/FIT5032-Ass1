@@ -108,7 +108,6 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <%-- Using Jquery to make default selected value nothing --%>
                     <asp:Label runat="server" AssociatedControlID="Gender" CssClass="col-sm-3 control-label">Gender </asp:Label>
                     <div class="col-sm-9">
                         <asp:ListBox ID="Gender" runat="server" Rows="2" CssClass="form-control input-sm">
@@ -158,7 +157,7 @@
                 </div>
                 <div class="form-group">
                     <script type="text/javascript">
-                        function validateTerms(oSrc, args) {
+                        function ValidateTerms(oSrc, args) {
                             args.IsValid = (args.checked);
                         }
                     </script>
@@ -208,7 +207,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-9">
-                        <asp:Button runat="server" CommandName="MoveNext" Text="Register" CssClass="btn btn-default"
+                        <asp:Button runat="server" CommandName="MoveNext" Text="Register" CssClass="btn btn-primary"
                             ID="Register"
                             OnClick="RegisterButton_Click" />
                     </div>
