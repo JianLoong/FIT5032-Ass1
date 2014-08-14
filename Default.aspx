@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="Adverts" CssClass="img-responsive" />
-                <asp:XmlDataSource ID="Adverts" runat="server" DataFile="Adverts.xml"></asp:XmlDataSource>
+                <asp:XmlDataSource ID="Adverts" runat="server" DataFile="./Adverts.xml"></asp:XmlDataSource>
             </div>
             <div class="col-lg-12 text-center">
                 <p></p>
@@ -19,7 +19,7 @@
     <p></p>
 
     <div class="row" style="font-family: 'Lobster', cursive;">
-        <div class="col-lg-3 text-center">
+        <div class="col-md-3 text-center">
             <div class="well well-sm">
                 <asp:Image runat="server"
                     ImageUrl="./Images/01.jpg"
@@ -29,7 +29,7 @@
                 <em>Porter House Steak</em>
             </div>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-md-3 text-center">
             <div class="well well-sm">
                 <asp:Image runat="server" ImageUrl="./Images/02.jpg"
                     CssClass="img-responsive"
@@ -38,7 +38,7 @@
                 <em>Tom Yum Broth</em>
             </div>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-md-3 text-center">
             <div class="well well-sm">
                 <asp:Image runat="server" ImageUrl="./Images/03.jpg"
                     CssClass="img-responsive"
@@ -47,7 +47,7 @@
                 <em>Pork & Cos Lettuce Wrap</em>
             </div>
         </div>
-        <div class="col-lg-3 text-center">
+        <div class="col-md-3 text-center">
             <div class="well well-sm">
                 <asp:Image runat="server" ImageUrl="./Images/04.jpg"
                     CssClass="img-responsive"

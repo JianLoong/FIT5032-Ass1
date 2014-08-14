@@ -10,7 +10,6 @@
     <%--<link href="~/Content/Site.css" rel="stylesheet" /> --%>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/sticky-footer.css" rel="stylesheet" />
-    <link href="Content/google-map.css" rel="stylesheet" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Google cursive font -->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
