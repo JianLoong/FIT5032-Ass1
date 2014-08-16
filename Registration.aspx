@@ -110,10 +110,11 @@
                 <div class="form-group">
                     <asp:Label runat="server" AssociatedControlID="Gender" CssClass="col-sm-3 control-label">Gender </asp:Label>
                     <div class="col-sm-9">
-                        <asp:ListBox ID="Gender" runat="server" Rows="2" CssClass="form-control input-sm">
+                        <asp:ListBox ID="Gender" runat="server" CssClass="form-control input-sm"
+                            EnableTheming="false">
                             <asp:ListItem Text="--Select One--" Value="" />
-                            <asp:ListItem>Male</asp:ListItem>
-                            <asp:ListItem>Female</asp:ListItem>
+                            <asp:ListItem Text="Male"></asp:ListItem>
+                            <asp:ListItem Text="Female">Female</asp:ListItem>
                         </asp:ListBox>
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="Gender"
@@ -156,11 +157,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <script type="text/javascript">
+<%--                    <script type="text/javascript">
                         function ValidateTerms(oSrc, args) {
                             args.IsValid = (args.checked);
                         }
-                    </script>
+                    </script>--%>
                     <%-- http://stackoverflow.com/questions/5876021/correct-semantic-tag-for-copyright-info-html5 --%>
                     <asp:Label runat="server" AssociatedControlID="Terms" CssClass="col-sm-3 control-label">Terms</asp:Label>
                     <div class="col-sm-9">

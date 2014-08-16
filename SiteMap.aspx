@@ -10,7 +10,7 @@
             <ParentNodeStyle Font-Bold="False" />
             <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
         </asp:TreeView>
-        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server"/>
     </div>
     <p></p>
 </asp:Content>

@@ -3,8 +3,8 @@
 <%-- Done via anchors due to the specifications that only 1 master can be used. Anchors are then used to redirect user from main page. 
     http://stackoverflow.com/questions/6826741/anchor-link-landing-in-wrong-position --%>
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent">
-        <h1><i class="fa fa-spoon">&nbsp;</i>About</h1>
-        <hr />
+    <h1><i class="fa fa-spoon">&nbsp;</i>About</h1>
+    <hr />
     <div class="row">
         <div class="col-lg-6">
             <h1>Who are we?</h1>
@@ -24,12 +24,12 @@
                         <p>Interested to know our origins? </p>
 
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-lg-6">
-        <asp:Image CssClass="img-responsive" runat="server" ToolTip="U-Village Restaurant and Bar" ImageUrl="./Images/gallery.jpg" />
-    </div>
+        <div class="col-lg-6">
+            <asp:Image CssClass="img-responsive" runat="server" ToolTip="U-Village Restaurant and Bar" ImageUrl="./Images/gallery.jpg" />
+        </div>
     </div>
     <p></p>
     <p><strong><em><i class="fa fa-comments">&nbsp;</i>Have a look what our customers say.......</em></strong></p>
