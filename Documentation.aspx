@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Documentation" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="Documentation.aspx.cs" %>
+﻿<%@ Page Title="Documentation" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="Documentation.aspx.cs" StylesheetTheme="SkinFile"  %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
         <h1><i class="fa fa-list">&nbsp;</i><%: Title %></h1>
@@ -37,15 +37,15 @@
                 </tr>
                 <tr>
                     <td><i class="fa fa-paperclip">&nbsp;</i>Assignment Number</td>
-                    <td>1 - Construct a web site for a business or organisation.</td>
+                    <td><asp:HyperLink runat="server" NavigateUrl="https://walkabout.infotech.monash.edu.au/walkabout/fit5032/index.html" >Assignment 1: Construct a Website for a Business or Organization.</asp:HyperLink></td>
                 </tr>
                 <tr>
                     <td><i class="fa fa-calendar-o">&nbsp;</i>Date of Submission</td>
-                    <td></td>
+                    <td>26 August 2014</td>
                 </tr>
                 <tr>
                     <td><i class="fa fa-graduation-cap">&nbsp;</i>Tutor Name</td>
-                    <td>Christopher</td>
+                    <td>Christopher Messom</td>
                 </tr>
                 <tr>
                     <td><i class="fa fa-envelope-square">&nbsp;</i>Email</td>

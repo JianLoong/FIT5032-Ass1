@@ -9,7 +9,7 @@ public partial class ass1_Registration : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Country.SelectedValue = "Australia";
+        Registration_Success.Visible = false;
     }
 
     protected void RegisterButton_Click(Object sender, EventArgs e)
@@ -18,6 +18,7 @@ public partial class ass1_Registration : System.Web.UI.Page
         {
             // Hide Panel
             Registration_Form.Visible = false;
+            Registration_Success.Visible = true;
             // Put all contents in Panel if page is valid with formating.
             // Compile and format all Information.
             String registrationInfo = "";
@@ -32,12 +33,14 @@ public partial class ass1_Registration : System.Web.UI.Page
             registrationInfo += "<tr><td>Newsletter</td><td>" + Newsletter.Text.ToString() + "</td></tr>";
             registrationInfo += "<tr><td>Terms and Conditions</td><td>" + "You agreed to everything without reading." + "</td></tr>";
             registrationInfo += "<tr><td>No of times eat out</td><td>" + NoOfEatOut.Text + "</td></tr>";
+            registrationInfo += "";
             registrationInfo += "</table>";
-
 
 
             Information.Text = "<div class='alert alert-success' role='alert'><h1><i class='fa fa-thumbs-o-up'>&nbsp;</i>Congratulations, you have successfully registered.</h1></div>";
             Information.Text += "<div class='alert alert-info'>" + registrationInfo + "</div>";
+
+            
         }
     }
 

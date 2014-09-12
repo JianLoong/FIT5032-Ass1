@@ -1,4 +1,4 @@
-<%@ Page Title="Our History" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="OurHistory.aspx.cs" %>
+<%@ Page Title="Our History" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="OurHistory.aspx.cs" StylesheetTheme="SkinFile"  %>
 
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent">
     <h1><i class="fa fa-history">&nbsp;</i>Our History</h1>

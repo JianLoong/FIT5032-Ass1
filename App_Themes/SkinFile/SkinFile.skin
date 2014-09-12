@@ -1,0 +1,40 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:Calendar runat="server" SkinID="CalendarSkin"
+BackColor="White" BorderColor="White" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Width="100%" BorderWidth="1px" Height="190px" NextPrevFormat="FullMonth">
+    <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+    <NextPrevStyle VerticalAlign="Bottom" Font-Bold="True" Font-Size="8pt" ForeColor="#333333" />
+    <OtherMonthDayStyle ForeColor="#999999" />
+    <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+    <TitleStyle BackColor="White" BorderColor="Black" Font-Bold="True" BorderWidth="4px" Font-Size="12pt" ForeColor="#333399" />
+    <TodayDayStyle BackColor="#CCCCCC" />
+</asp:Calendar>
+
+<asp:SiteMapPath runat="server" SkinID="SiteMapPathSkin"
+Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+    <CurrentNodeStyle ForeColor="#333333" />
+    <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+    <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+    <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+</asp:SiteMapPath>
+
+<asp:TreeView runat="server" SkinID="TreeViewSkin" ImageSet="BulletedList" 
+ShowExpandCollapse="False" ShowLines="True">
+<HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+<NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+<ParentNodeStyle Font-Bold="False" />
+<SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+</asp:TreeView>

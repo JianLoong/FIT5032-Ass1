@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" Title="Registration" AutoEventWireup="true" MasterPageFile="MasterPage.master" CodeFile="Registration.aspx.cs" Inherits="ass1_Registration" %>
+﻿<%@ Page Language="C#" Title="Registration" AutoEventWireup="true" MasterPageFile="MasterPage.master" Theme="SkinFile"
+     CodeFile="Registration.aspx.cs" Inherits="ass1_Registration"
+     StylesheetTheme="SkinFile"%>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <div class="well well">
@@ -13,7 +15,7 @@
                     <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-sm-3 control-label">User name</asp:Label>
                     <div class="col-sm-9">
                         <asp:TextBox runat="server" ID="UserName" CssClass="form-control input-sm" />
-                        <asp:RequiredFieldValidator runat="server" 
+                        <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="UserName"
                             CssClass="label label-danger"
                             ErrorMessage="The user name field is required."
@@ -46,7 +48,8 @@
                     <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-sm-3 control-label">Email address</asp:Label>
                     <div class="col-sm-9">
                         <asp:TextBox runat="server" ID="Email" CssClass="form-control input-sm" />
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                        <asp:RequiredFieldValidator runat="server"
+                            ControlToValidate="Email"
                             CssClass="label label-danger"
                             ErrorMessage="The email address field is required."
                             ForeColor=""
@@ -75,6 +78,7 @@
                             CssClass="label label-danger"
                             ErrorMessage="The password field is required."
                             ForeColor=""
+                            EnableViewState="false"
                             Display="Dynamic"
                             EnableTheming="false">
                         </asp:RequiredFieldValidator>
@@ -103,18 +107,18 @@
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="ConfirmPassword"
                             CssClass="label label-danger"
-                            Display="Dynamic" ErrorMessage="The confirm password field is required."
+                            Display="Dynamic"
+                            ErrorMessage="The confirm password field is required."
                             ForeColor="" />
                     </div>
                 </div>
                 <div class="form-group">
+                    <!-- Limitations http://stackoverflow.com/questions/7272008/two-issues-with-field-validation -->
                     <asp:Label runat="server" AssociatedControlID="Gender" CssClass="col-sm-3 control-label">Gender </asp:Label>
                     <div class="col-sm-9">
-                        <asp:ListBox ID="Gender" runat="server" CssClass="form-control input-sm"
-                            EnableTheming="false">
-                            <asp:ListItem Text="--Select One--" Value="" />
-                            <asp:ListItem Text="Male"></asp:ListItem>
-                            <asp:ListItem Text="Female">Female</asp:ListItem>
+                        <asp:ListBox ID="Gender" runat="server" CssClass="" >
+                            <asp:ListItem>Male</asp:ListItem>
+                            <asp:ListItem>Female</asp:ListItem>
                         </asp:ListBox>
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="Gender"
@@ -127,9 +131,10 @@
                 <div class="form-group">
                     <asp:Label runat="server" AssociatedControlID="Country" CssClass="col-sm-3 control-label">Country </asp:Label>
                     <div class="col-sm-9">
-                        <asp:DropDownList ID="Country" runat="server" DataSourceID="Countries" DataTextField="countryName" CssClass="form-control input-sm"
+                        <asp:DropDownList ID="Country" runat="server" DataSourceID="Countries" DataTextField="countryName" 
                             DataValueField="countryName">
                         </asp:DropDownList>
+
                         <asp:XmlDataSource ID="Countries" runat="server" DataFile="Countries.xml"></asp:XmlDataSource>
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="Country"
@@ -157,7 +162,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-<%--                    <script type="text/javascript">
+                    <%--                    <script type="text/javascript">
                         function ValidateTerms(oSrc, args) {
                             args.IsValid = (args.checked);
                         }
@@ -172,7 +177,7 @@
                             Display="Dynamic"
                             ForeColor=""
                             CssClass="label label-danger"
-                            ErrorMessage="Please accept the terms and conditions to proceed.."
+                            ErrorMessage="Please accept the terms and conditions to proceed."
                             ClientValidationFunction="ValidateTerms"
                             OnServerValidate="CustomValidator1_ServerValidate" EnableTheming="False" EnableViewState="False"></asp:CustomValidator>
                     </div>
@@ -220,6 +225,7 @@
         <asp:Panel runat="server"
             ID="Registration_Success">
             <asp:Label ID="Information" runat="server"></asp:Label>
+            <asp:HyperLink runat="server" ID="Link" NavigateUrl="./Index.aspx">Please click here to go back to the index page.</asp:HyperLink>
         </asp:Panel>
     </div>
 </asp:Content>

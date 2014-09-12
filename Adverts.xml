@@ -4,7 +4,7 @@
     <!-- The URL for the ad image -->
     <ImageUrl>./Images/ad1.png</ImageUrl>
     <!-- The URL the ad redirects the user to -->
-    <NavigateUrl></NavigateUrl>
+    <NavigateUrl>./</NavigateUrl>
     <!-- The alternate text for the image -->
     <AlternateText>U-Village Restaurant and Bar</AlternateText>
     <!-- The relative number of times this ad should appear -->

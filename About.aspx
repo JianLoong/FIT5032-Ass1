@@ -1,4 +1,6 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="About.aspx.cs" %>
+﻿<%@ Page Title="About" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" 
+    CodeBehind="About.aspx.cs"
+    StylesheetTheme="SkinFile" %>
 
 <%-- Done via anchors due to the specifications that only 1 master can be used. Anchors are then used to redirect user from main page. 
     http://stackoverflow.com/questions/6826741/anchor-link-landing-in-wrong-position --%>

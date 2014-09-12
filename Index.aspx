@@ -1,7 +1,7 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="MasterPage.Master" AutoEventWireup="true" StylesheetTheme="SkinFile" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="MasterPage.Master" AutoEventWireup="true" StylesheetTheme="SkinFile"  %>
 
 <asp:Content runat="server" ID="Default" ContentPlaceHolderID="MainContent">
-    <section class="featured">
+    
         <div class="row">
             <div class="col-lg-12">
                 <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="Adverts" CssClass="img-responsive" />
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    
     <p></p>
 
     <div class="row" style="font-family: 'Lobster', cursive;">

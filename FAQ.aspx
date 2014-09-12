@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Frequently Asked Questions" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" %>
+﻿<%@ Page Title="Frequently Asked Questions" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeBehind="FAQ.aspx.cs" StylesheetTheme="SkinFile" %>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <h1><i class="fa fa-question-circle">&nbsp;</i>FAQ</h1>
     <hr />
