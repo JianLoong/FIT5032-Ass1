@@ -119,8 +119,9 @@
     </div>
     <div class="footer">
         <div class="container">
+            <p></p>
             <p class="text-muted text-center">&copy; Copyright U-Village Pty Ltd 2014</p>
-            <p class="text-muted text-center small">This site makes use of "Font Awesome by Dave Gandy - http://fontawesome.io"</p>
+            <%--<p class="text-muted text-center small">This site makes use of "Font Awesome by Dave Gandy - http://fontawesome.io"</p>--%>
         </div>
     </div>
 
