@@ -116,7 +116,7 @@
                     <!-- Limitations http://stackoverflow.com/questions/7272008/two-issues-with-field-validation -->
                     <asp:Label runat="server" AssociatedControlID="Gender" CssClass="col-sm-3 control-label">Gender </asp:Label>
                     <div class="col-sm-9">
-                        <asp:ListBox ID="Gender" runat="server" CssClass="" >
+                        <asp:ListBox ID="Gender" runat="server" CssClass="form-control" >
                             <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:ListBox>
@@ -132,7 +132,8 @@
                     <asp:Label runat="server" AssociatedControlID="Country" CssClass="col-sm-3 control-label">Country </asp:Label>
                     <div class="col-sm-9">
                         <asp:DropDownList ID="Country" runat="server" DataSourceID="Countries" DataTextField="countryName" 
-                            DataValueField="countryName">
+                            DataValueField="countryName"
+                            CssClass="form-control">
                         </asp:DropDownList>
 
                         <asp:XmlDataSource ID="Countries" runat="server" DataFile="Countries.xml"></asp:XmlDataSource>
@@ -172,7 +173,7 @@
                     <div class="col-sm-9">
                         <asp:CheckBox ID="Terms" runat="server" CssClass="checkbox-inline" Text="I agree to the terms and conditions." />
                     </div>
-                    <div class="col-sm-offset-3 col-sm-9">
+                    <div class="checkbox">
                         <asp:CustomValidator ID="CustomValidator1" runat="server"
                             Display="Dynamic"
                             ForeColor=""
@@ -190,6 +191,7 @@
                     <%--Range validator : http://stackoverflow.com/questions/8826328/asp-net-range-validator-on-textbox--%>
                     <asp:Label runat="server" AssociatedControlID="NoOfEatOut" CssClass="col-sm-3 control-label">How often do you eat out in a month?</asp:Label>
                     <div class="col-sm-9">
+                        
                         <asp:TextBox ID="NoOfEatOut" runat="server" CssClass="form-control input-sm"></asp:TextBox>
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="NoOfEatOut"
